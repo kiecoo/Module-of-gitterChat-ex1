@@ -1,9 +1,15 @@
-module.exports = makeGitterURL
+// index.js
 
-function makeGitterURL (username) {
-  return `https://gitter.im/${username}/~embed`
-}
+var makeGitterURL1 = require('./make-gitter-url.js')
 
-	        //difference from the repo of makeGitterChatbox https://github.com/kiecoo/makeGitterChatbox/blob/master/index.html
-//		var x = makeGitterChatbox(exampleProfile)
-//		document.body.appendChild(x)
+module.exports = makeGitterChatbox
+
+function makeGitterChatbox (profile) {
+		  return bel`
+		    <div class=${css1.chatbox}>
+		<img src="${profile.photo}" class=${css1.photo1}>
+		      <h1> ${profile.name} </h1>
+		      <iframe class=${css1.iframe} src=${makeGitterURL1(profile.username)}></iframe>
+		    </div>
+		  `
+		}
