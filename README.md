@@ -1,6 +1,6 @@
 # Module-of-gitterChat-ex1
->ex1 : before combining
->No. : 3-1-ex1:【success】
+>- ex1 : before combining
+>- No. : 3-1-ex1:【success】
 
 ##  contents
 >in branches
