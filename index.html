@@ -7,7 +7,7 @@
   <body>
     <script>
     
-    var makeGitterURL1 = require('./index.js')
+    var makeGitterChatbox1 = require('./index.js')
    //var gitterChat = module.exports 
     
 		var bel = require('bel')
@@ -45,15 +45,7 @@
 		    }
 		`
 		
-		function makeGitterChatbox (profile) {
-		  return bel`
-		    <div class=${css1.chatbox}>
-		<img src="${profile.photo}" class=${css1.photo1}>
-		      <h1> ${profile.name} </h1>
-		      <iframe class=${css1.iframe} src=${makeGitterURL1(profile.username)}></iframe>
-		    </div>
-		  `
-		}
+		
 	    
 		var exampleProfile = {
 		  name: 'nina',
@@ -62,7 +54,7 @@
 		}
   
 	        //difference from the repo of makeGitterChatbox https://github.com/kiecoo/makeGitterChatbox/blob/master/index.html
-		var x = makeGitterChatbox(exampleProfile)
+		var x = makeGitterChatbox1(exampleProfile)
 		document.body.appendChild(x)
 	    </script>
 	  </body>
